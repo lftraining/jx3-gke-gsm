@@ -11,7 +11,7 @@ spec:
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    kanikoFlags: --skip-unused-stages --snapshotMode=redo
+    kanikoFlags: --skip-unused-stages --snapshot-mode=redo
     provider: gke
     registry: gcr.io
   environments:
