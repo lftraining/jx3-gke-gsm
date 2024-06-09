@@ -20,17 +20,25 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    clusterName: lfs268-lab
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    kanikoFlags: --skip-unused-stages --snapshotMode=redo
+    gke:
+      projectNumber: "936740563065"
+    kanikoFlags: --skip-unused-stages --snapshot-mode=redo
+    project: sincere-canyon-417400
     provider: gke
     registry: gcr.io
+    zone: us-west1-a
   environments:
   - key: dev
+    owner: lftraining
+    repository: jx3-gke-gsm
   - key: staging
   - key: production
   ingress:
@@ -40,9 +48,18 @@ jxRequirements:
     tls:
       email: ""
       enabled: false
-      production: false
+      production: true
+  pipelineUser:
+    username: hgautam
   repository: nexus
   secretStorage: gsm
+  storage:
+  - name: logs
+    url: gs://logs-lfs268-lab-9c3cb8b1a990
+  - name: reports
+    url: gs://reports-lfs268-lab-9c3cb8b1a990
+  - name: repository
+    url: gs://repository-lfs268-lab-9c3cb8b1a990
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
