@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: LFS268-hgautam
+    provider: github
+    repository: pipeline-lab
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: lfs268-hgautam-pipeline-lab
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/LFS268-hgautam/pipeline-lab.git
+  org: LFS268-hgautam
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: pipeline-lab
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/LFS268-hgautam/pipeline-lab

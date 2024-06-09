@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        LFS268-hgautam/pipeline-lab: true
         lftraining/jx3-gke-gsm: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        LFS268-hgautam/pipeline-lab: merge
         lftraining/jx3-gke-gsm: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - lftraining/jx3-gke-gsm
+        - LFS268-hgautam/pipeline-lab
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - lftraining/jx3-gke-gsm
+        - LFS268-hgautam/pipeline-lab
       target_url: http://lighthouse-jx.35.185.242.177.nip.io/merge/status
 kind: ConfigMap
 metadata:
