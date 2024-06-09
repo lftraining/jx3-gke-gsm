@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - lftraining/jx3-gke-gsm
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.35.185.242.177.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
