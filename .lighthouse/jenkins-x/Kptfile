@@ -6,6 +6,6 @@ upstream:
   type: git
   git:
     commit: 84e4784be9b1d9cca2f838cf3911c652e2b64baf
-    repo: https://github.com/LFS268-hgautam/jx3-pipeline-catalog
+    repo: https://github.com/lftraining/jx3-pipeline-catalog
     directory: /environment/.lighthouse/jenkins-x
     ref: kaniko
