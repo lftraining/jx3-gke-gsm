@@ -1,7 +1,10 @@
 cronjob:
   enabled: true
   schedule: "0 * * * *"
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 role:
   enabled: true
   rules:
@@ -11,7 +14,10 @@ role:
     - testruns
     verbs:
     - '*'
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 clusterrole:
   enabled: true
   rules:
@@ -21,6 +27,7 @@ clusterrole:
     - 'secrets'
     verbs:
     - 'list'
+<<<<<<< HEAD
 
 args:
   - test
@@ -29,3 +36,11 @@ args:
 serviceaccount:
   enabled: true
   customName: tekton-bot
+=======
+args:
+- test
+- gc
+serviceaccount:
+  enabled: true
+  customName: tekton-bot
+>>>>>>> upstream/main

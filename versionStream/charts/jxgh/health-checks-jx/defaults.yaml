@@ -1,3 +1,8 @@
 gitUrl: https://github.com/jenkins-x-plugins/jx-kh-check
+<<<<<<< HEAD
 version: 0.0.78
 namespace: jx
+=======
+version: 0.0.80
+namespace: jx
+>>>>>>> upstream/main

@@ -1,2 +1,6 @@
 gitUrl: https://github.com/jenkins-x/jx-pipelines-visualizer
+<<<<<<< HEAD
 version: 1.8.2
+=======
+version: 1.8.11
+>>>>>>> upstream/main

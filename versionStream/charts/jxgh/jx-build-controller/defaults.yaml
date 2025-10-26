@@ -1,2 +1,6 @@
 gitUrl: https://github.com/jenkins-x-plugins/jx-build-controller
+<<<<<<< HEAD
 version: 0.5.8
+=======
+version: 0.5.32
+>>>>>>> upstream/main

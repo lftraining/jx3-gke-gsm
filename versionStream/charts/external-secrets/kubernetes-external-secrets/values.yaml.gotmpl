@@ -43,7 +43,11 @@ serviceAccount:
 deploymentInitContainers:
   initContainers:
   - name: init-vault-secret
+<<<<<<< HEAD
     image: bitnami/kubectl:1.20.2
+=======
+    image: bitnamilegacy/kubectl:1.33.4
+>>>>>>> upstream/main
     command: ["/bin/sh", "-c"]
     args: ["kubectl get secret -n jx-vault vault-tls -o jsonpath='{.data.ca\\.crt}' | base64 --decode > /tmp/vault/ca.crt"]
     volumeMounts:

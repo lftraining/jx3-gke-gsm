@@ -35,4 +35,8 @@ test:
 metricsInstance:
   enabled: false
 gateway:
+<<<<<<< HEAD
   enabled: false
+=======
+  enabled: false
+>>>>>>> upstream/main

@@ -1,2 +1,6 @@
 gitUrl: https://github.com/jenkins-x-plugins/lighthouse-webui-plugin
+<<<<<<< HEAD
 version: 0.1.8
+=======
+version: 0.1.9
+>>>>>>> upstream/main

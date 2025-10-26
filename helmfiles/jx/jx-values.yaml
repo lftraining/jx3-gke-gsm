@@ -20,15 +20,21 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
+<<<<<<< HEAD
     devEnvApprovers:
     - todo
+=======
+>>>>>>> upstream/main
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
     kanikoFlags: --skip-unused-stages --snapshotMode=redo
     provider: gke
+<<<<<<< HEAD
     registry: gcr.io
+=======
+>>>>>>> upstream/main
   environments:
   - key: dev
   - key: staging

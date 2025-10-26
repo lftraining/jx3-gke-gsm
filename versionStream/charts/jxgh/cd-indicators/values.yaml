@@ -5,10 +5,16 @@ secrets:
     password:
       secretKeyRef:
         name: cd-indicators-postgresql-password
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 # embedded postgresql chart
 # https://github.com/bitnami/charts/blob/master/bitnami/postgresql/values.yaml
 postgresql:
   existingSecret: cd-indicators-postgresql-password
+<<<<<<< HEAD
   image:
     tag: 13.1.0-debian-10-r38
+=======
+>>>>>>> upstream/main

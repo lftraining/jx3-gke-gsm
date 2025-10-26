@@ -5,15 +5,12 @@ spec:
     enabled: false
     schedule: ""
   cluster:
-    devEnvApprovers:
-    - todo
     environmentGitOwner: todo
     gitKind: github
     gitName: github
     gitServer: https://github.com
-    kanikoFlags: --skip-unused-stages --snapshot-mode=redo
+    kanikoFlags: --skip-unused-stages --snapshotMode=redo
     provider: gke
-    registry: gcr.io
   environments:
   - key: dev
   - key: staging

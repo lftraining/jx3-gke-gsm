@@ -1,3 +1,7 @@
 gitUrl: https://github.com/cdfoundation/tekton-helm-chart
 namespace: tekton-pipelines
+<<<<<<< HEAD
 version: 1.0.2
+=======
+version: 1.4.0
+>>>>>>> upstream/main

@@ -8,11 +8,15 @@ server:
     type: Recreate
   # configure a 30d retention period - same as for loki
   retention: "30d"
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 alertmanager:
   enabled: true
   persistentVolume:
     enabled: true
+<<<<<<< HEAD
 
 kubeStateMetrics:
   enabled: true
@@ -23,6 +27,14 @@ nodeExporter:
 pushgateway:
   enabled: false
 
+=======
+kubeStateMetrics:
+  enabled: true
+nodeExporter:
+  enabled: true
+pushgateway:
+  enabled: false
+>>>>>>> upstream/main
 serverFiles:
   alerting_rules.yml:
     groups:

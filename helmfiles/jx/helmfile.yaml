@@ -1,24 +1,46 @@
+<<<<<<< HEAD
 filepath: ""
+=======
+>>>>>>> upstream/main
 environments:
   default:
     values:
     - jx-values.yaml
+<<<<<<< HEAD
 namespace: jx
 repositories:
 - name: bitnami
   url: https://charts.bitnami.com/bitnami
+=======
+---
+namespace: jx
+repositories:
+>>>>>>> upstream/main
 - name: stable
   url: https://charts.helm.sh/stable
 - name: jxgh
   url: https://jenkins-x-charts.github.io/repo
+<<<<<<< HEAD
 releases:
 - chart: bitnami/external-dns
+=======
+- name: bitnami-oci
+  url: registry-1.docker.io/bitnamicharts
+  oci: true
+releases:
+- chart: bitnami-oci/external-dns
+>>>>>>> upstream/main
   version: 6.20.3
   condition: jxRequirementsIngressExternalDNS.enabled
   name: external-dns
   values:
+<<<<<<< HEAD
   - ../../versionStream/charts/bitnami/external-dns/values.yaml.gotmpl
   - jx-values.yaml
+=======
+  - jx-values.yaml
+  - ../../versionStream/charts/bitnami-oci/external-dns/values.yaml.gotmpl
+>>>>>>> upstream/main
 - chart: jxgh/acme
   version: 0.1.0
   condition: jxRequirementsIngressTLS.enabled
@@ -27,7 +49,11 @@ releases:
   - ../../versionStream/charts/jxgh/acme-jx/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jxboot-helmfile-resources
+<<<<<<< HEAD
   version: 1.1.361
+=======
+  version: 1.2.1
+>>>>>>> upstream/main
   name: jxboot-helmfile-resources
   values:
   - ../../versionStream/charts/jxgh/jxboot-helmfile-resources/values.yaml.gotmpl
@@ -39,18 +65,30 @@ releases:
   - ../../versionStream/charts/jxgh/jenkins-x-crds/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jx-pipelines-visualizer
+<<<<<<< HEAD
   version: 1.8.2
+=======
+  version: 1.8.11
+>>>>>>> upstream/main
   name: jx-pipelines-visualizer
   values:
   - ../../versionStream/charts/jxgh/jx-pipelines-visualizer/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jx-preview
+<<<<<<< HEAD
   version: 0.4.9
+=======
+  version: 0.6.0
+>>>>>>> upstream/main
   name: jx-preview
   values:
   - jx-values.yaml
 - chart: jxgh/lighthouse
+<<<<<<< HEAD
   version: 1.16.1
+=======
+  version: 1.26.1
+>>>>>>> upstream/main
   name: lighthouse
   values:
   - ../../versionStream/charts/jxgh/lighthouse/values.yaml.gotmpl
@@ -68,17 +106,28 @@ releases:
   - ../../versionStream/charts/stable/chartmuseum/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jx-build-controller
+<<<<<<< HEAD
   version: 0.5.8
+=======
+  version: 0.5.32
+>>>>>>> upstream/main
   name: jx-build-controller
   values:
   - ../../versionStream/charts/jxgh/jx-build-controller/values.yaml.gotmpl
   - jx-values.yaml
 - chart: jxgh/jx-kh-check
+<<<<<<< HEAD
   version: 0.0.78
+=======
+  version: 0.0.80
+>>>>>>> upstream/main
   condition: jxRequirementsKuberhealthy.enabled
   name: health-checks-jx
   values:
   - ../../versionStream/charts/jxgh/health-checks-jx/values.yaml.gotmpl
   - jx-values.yaml
+<<<<<<< HEAD
 templates: {}
 renderedvalues: {}
+=======
+>>>>>>> upstream/main

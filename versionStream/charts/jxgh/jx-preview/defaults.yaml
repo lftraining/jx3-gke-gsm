@@ -1,2 +1,6 @@
 gitUrl: https://github.com/jenkins-x/jx-preview
+<<<<<<< HEAD
 version: 0.4.9
+=======
+version: 0.6.0
+>>>>>>> upstream/main

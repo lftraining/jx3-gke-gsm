@@ -42,6 +42,7 @@ keeper:
     prometheus.io/scrape: "true"
     prometheus.io/port: "9090"
   env:
+<<<<<<< HEAD
     LIGHTHOUSE_TRIGGER_ON_MISSING: enable
 {{- if eq .Values.jxRequirements.cluster.gitKind "bitbucketserver" }}
     GIT_CLONE_PATH_PREFIX: "scm"
@@ -49,6 +50,13 @@ keeper:
 
 image:
   repository: ghcr.io/jenkins-x/lighthouse
+=======
+{{- if eq .Values.jxRequirements.cluster.gitKind "bitbucketserver" }}
+    GIT_CLONE_PATH_PREFIX: "scm"
+{{- end }}
+    # the pipeline catalog version streams:
+    LIGHTHOUSE_VERSIONSTREAM_JENKINS_X_JX3_PIPELINE_CATALOG: {{ readFile "../../../git/github.com/jenkins-x/jx3-pipeline-catalog.yml" | fromYaml | get "version" | quote }}
+>>>>>>> upstream/main
 
 vault:
 {{- if eq .Values.jxRequirements.secretStorage "vault" }}

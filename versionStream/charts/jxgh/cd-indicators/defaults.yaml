@@ -1,2 +1,6 @@
 gitUrl: https://github.com/jenkins-x/cd-indicators
+<<<<<<< HEAD
 version: 0.0.18
+=======
+version: 0.1.7
+>>>>>>> upstream/main

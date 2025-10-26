@@ -1,9 +1,11 @@
 apiVersion: batch/v1
 kind: Job
-metadata:
+metadata: # kpt-merge: /
   labels:
     app: jx-boot
     jenkins-x.io/kind: jx-git-operator
+  annotations:
+    internal.kpt.dev/upstream-identifier: 'batch|Job|default|'
 spec:
   backoffLimit: 4
   completions: 1
@@ -29,7 +31,7 @@ spec:
             - secretRef:
                 name: jx-boot-job-env-vars
                 optional: true
-          image: ghcr.io/jenkins-x/jx-boot:3.10.137
+          image: ghcr.io/jenkins-x/jx-boot:3.16.25
           name: git-clone
           volumeMounts:
             - mountPath: /workspace
@@ -47,7 +49,7 @@ spec:
             - secretRef:
                 name: jx-boot-job-env-vars
                 optional: true
-          image: ghcr.io/jenkins-x/jx-boot:3.10.137
+          image: ghcr.io/jenkins-x/jx-boot:3.16.25
           imagePullPolicy: Always
           name: job
           volumeMounts:

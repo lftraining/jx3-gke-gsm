@@ -210,7 +210,10 @@ config:
             target_label: scrape_job
           {{- end }}
           {{- toYaml .Values.config.snippets.postlabelConfigs | nindent 4 }}
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 podAnnotations:
   prometheus.io/scrape: "true"
   prometheus.io/port: "http-metrics"
